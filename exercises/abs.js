@@ -11,8 +11,11 @@
 
 // Your code :
 
-//* Begin of tests
 const assert = require('assert')
+function assert = i => i < 0 ? return(-i) : return(i)
+}
+
+//* Begin of tests
 
 assert.strictEqual(typeof abs, 'function')
 assert.strictEqual(abs.toString().includes('Math.abs'), false)
