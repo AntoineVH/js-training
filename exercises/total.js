@@ -6,6 +6,8 @@
  *
  */
 
+const calc = (accumulator, currentValue) => accumulator + currentValue
+const total = array1 => array1.reduce(calc)
 
 //* Begin of tests
 const assert = require('assert')

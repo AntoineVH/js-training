@@ -7,6 +7,11 @@
  *
  */
 
+const capitalize = input => {
+    let morceau1 = input.substr(1).toLowerCase()
+    let morceau2 = input.charAt(0).toUpperCase() 
+    return morceau2.concat(morceau1)
+}
 
 //* Begin of tests
 const assert = require('assert')

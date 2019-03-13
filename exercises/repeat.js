@@ -8,6 +8,16 @@
  *
  */
 
+const repeat = (string, times) => {
+    let repeatedString = "";
+    while (times > 0) {
+      repeatedString += string;
+      times--;
+    }
+    return repeatedString;
+  }
+
+
 //* Begin of tests
 const assert = require('assert')
 

@@ -8,6 +8,8 @@
 
 // Your code :
 
+const add = (i, j) => { return i+j }
+
 //* Begin of tests
 const assert = require('assert')
 const rand = Math.random()

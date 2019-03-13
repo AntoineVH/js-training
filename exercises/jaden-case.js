@@ -10,10 +10,15 @@
  *
  */
 
-
-
+function jadenCase(input) {
+   let split = input.toLowerCase().split(' ');
+   for (let i = 0; i < split.length; i++) {
+       split[i] = split[i].charAt(0).toUpperCase() + split[i].substring(1);     
+   }
+   return split.join(' '); 
+}
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(jadenCase('sPoNgE bOb MeMe YoU mUsT mAkE yOuR oWn TeStS'), 'Sponge Bob Meme You Must Make Your Own Tests')
 // End of tests */

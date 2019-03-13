@@ -10,6 +10,27 @@
 
 // Your code :
 
+let multiply = (input, putin) => {
+    let n = 0
+    let total = 0
+    if (input !== 0) {
+        if (input < 0) {
+            while (n > input) {
+                n--
+                total = total - putin
+            }
+            return total
+        } else {
+            while (n < input) {
+                n++
+                total = total + putin
+            }
+            return total
+        }
+    } else {return total}
+}
+
+
 //* Begin of tests
 const assert = require('assert')
 

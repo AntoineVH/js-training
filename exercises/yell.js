@@ -6,9 +6,10 @@
  *
  */
 
+const yell = string => string.toUpperCase()
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(yell('please wOrk'), 'PLEASE WORK')
 // End of tests */

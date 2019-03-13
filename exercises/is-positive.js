@@ -9,6 +9,7 @@
 
 // Your code:
 
+const isPositive = i => { return i > 0 ? true : false }
 
 //* Begin of tests
 const assert = require('assert')
